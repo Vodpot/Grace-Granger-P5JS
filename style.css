@@ -1,7 +1,66 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Oi&display=swap" rel="stylesheet');
+
+body {
   margin: 0;
   padding: 0;
+  background-color: rgb(43, 121, 121);
 }
 canvas {
   display: block;
+  padding: 20px;
+  margin: auto;
+}
+
+canvas.home  {
+  display: block;
+  padding: 20px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+div.ex-text {
+  display: block;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  color: rgb(206, 228, 236);
+  font-family: "Chicle", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  font-size: xx-large
+}
+
+h2 {
+  color: rgb(206, 228, 236);
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large
+}
+
+h3 {
+  color: rgb(206, 228, 236);
+ font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
+
+p {
+  color: rgb(206, 228, 236);
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
+
+a {
+  color: rgb(206, 228, 236);
+ font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
 }
