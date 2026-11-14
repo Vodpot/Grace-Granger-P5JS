@@ -1,54 +1,57 @@
 //Grace Granger
 //Homework 7 redone in P5JS
 
-//Location references for the 9 possible shape spots
+// Variables to define the 9 possible spots
 
-  let xList = ['55','170','290']
-  let yList = ['75','255','420']
-  
+  let xList = [55, 170, 290];
+  let yList = [75, 255, 420];
+  let colors = ['#0078BF', '#F15060', '#FF48B0', '#FF6C2F', '#FFE800'];
 
 function setup() {
- let canvas =  createCanvas(700, 500)
- canvas.parent('sketch-holder')
+  createCanvas(350, 500);
+  noLoop();
 }
 
+function draw() {
+  // Match canvas to my CSS file's color
+  background(157, 122, 210); 
 
-function draw(){
-  background(255);
-
-  // Line thickness and Color
+  // Line thickness and Color for the grid
   strokeWeight(8);
   stroke(0);
 
-//Tic Tac Toe Grid
-  for (let lineX = 115; lineX <= 230, lineX = lineX + 115;) {
+  // Vertical Lines
+  for (let lineX = 115; lineX <= 230; lineX += 115) {
     line(lineX, 5, lineX, 495);
   }
-  for (let lineY = 155; lineY <= 310, lineY = LineY + 155;) {
+  // Horizontal Lines
+  for (let lineY = 155; lineY <= 500; lineY += 175) {
     line(5, lineY, 345, lineY);
   }
-//Placing Os and Xs
 
+  // Placing O's and "Ex's"
   strokeWeight(10);
   noFill();
-  //Determines there is only 9 total shapes
-    for (let x = 1; x <= 3; x++){
-        for (let y = 1; y <= 3; y++){
-  // Determines Color of the shape that will be placed for each of the 9 locations
-  stroke(random(['#0078BF','#F15060', '#FF48B0','#FF6C2F','#FFE800']))
-    shapeType = random(['circle', 'Ex'])
-  // Places Os
-    if (shapeType == 'circle') {
-  // Os Size
-  circle(xList[x], yList[y], 60);
-  // Places Xs
-    } else {
-         (shapeType == 'Ex');
-  // Xs size
-  line (xList[x]-30,yList[y]-30,xList[x]+30,yList[y]+30);
-  line (xList[x]-30,yList[y]+30,xList[x]+30,yList[y]-30);
-            }
-    noLoop()
-        }
+
+  // For loop to place the grid
+  for (let x = 0; x < 3; x++) {
+    for (let y = 0; y < 3; y++) {
+      // Determine Color and Shape type
+      stroke(random(['#0078BF', '#F15060', '#FF48B0', '#FF6C2F', '#FFE800']));
+      let shapeType = random(['circle', 'Ex']);
+
+      // Places O's or "Ex's"
+      if (shapeType === 'circle') {
+        circle(xList[x], yList[y], 60);
+      } else {
+        line(xList[x] - 30, yList[y] - 30, xList[x] + 30, yList[y] + 30);
+        line(xList[x] - 30, yList[y] + 30, xList[x] + 30, yList[y] - 30);
+      }
     }
+  }
 }
+
+//Click to get a new sketch
+  function mouseClicked() {
+    redraw();
+  }

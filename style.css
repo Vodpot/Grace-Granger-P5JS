@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(43, 121, 121);
+  background-color: rgb(157, 122, 210);
 }
 canvas {
   display: block;
@@ -25,7 +25,7 @@ div.ex-text {
 }
 
 h1 {
-  color: rgb(206, 228, 236);
+  color: rgb(242, 205, 207);
   font-family: "Chicle", serif;
   font-weight: 200;
   font-style: normal;
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(206, 228, 236);
+  color: rgb(242, 205, 207);
   font-family: "Chicle", serif;
   font-weight: 400;
   font-style: normal;
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-  color: rgb(206, 228, 236);
+  color: rgb(242, 205, 207);
  font-family: "Chicle", serif;
   font-weight: 400;
   font-style: normal;
@@ -50,7 +50,7 @@ h3 {
 }
 
 p {
-  color: rgb(206, 228, 236);
+  color: rgb(242, 205, 207);
   font-family: "Chicle", serif;
   font-weight: 400;
   font-style: normal;
@@ -58,7 +58,7 @@ p {
 }
 
 a {
-  color: rgb(206, 228, 236);
+  color: rgb(242, 205, 207);
  font-family: "Chicle", serif;
   font-weight: 400;
   font-style: normal;
