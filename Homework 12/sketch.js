@@ -6,7 +6,7 @@ function setup(){
 }
 
 function draw(){
-background(255)
+background(243, 234, 146)
 stroke(0)
 strokeWeight(5)
 fill(100)
