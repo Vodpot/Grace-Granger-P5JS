@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Honk:MORF@15&family=Oi&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
-  background-color: rgb(243, 234, 146);
+  background-color: rgb(51, 2, 47);
 }
 canvas {
   display: block;
@@ -23,8 +25,8 @@ div.ex-text {
 }
 
 h1 {
-  color: rgb(54, 8, 74);
-  font-family: "Chicle", serif;
+  color: rgb(255,255,255);
+  font-family: serif;
   font-weight: 200;
   font-style: normal;
   text-align: center;
@@ -32,8 +34,8 @@ h1 {
 }
 
 h2 {
-  color: rgb(54, 8, 74);
-  font-family: "Chicle", serif;
+  color: rgb(255,255,255);
+  font-family: "Honk", serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -41,8 +43,8 @@ h2 {
 }
 
 p {
-  color: rgb(54, 8, 74);
-  font-family: "Chicle", serif;
+  color: rgb(255,255,255);
+  font-family: serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
